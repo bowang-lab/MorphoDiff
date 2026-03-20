@@ -126,8 +126,7 @@ class PerturbationEncoder:
             dimension (77, 768)"""
         # pad gene_embedding with value 1 to have dimension 768
         # (768 is SD prompt encoding size)
-        # final_size = 768
-        final_size = 2048
+        final_size = 768
 
         # Calculate the amount of padding on each side
         padding_left = (final_size - len(embedding)) // 2
